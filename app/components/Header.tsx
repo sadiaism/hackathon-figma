@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { useState } from "react";
 import { AiOutlineMenu ,AiOutlineClose} from "react-icons/ai";
+import { BiDownArrow } from 'react-icons/bi'
 
 
 const Header = () => {
@@ -13,7 +14,8 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
-  return (
+  
+return (
     <div>
 {/* top header */}
     <div className=' flex justify-between w-[1440px] h-[38px] bg-[#000000] '>
@@ -31,11 +33,17 @@ const Header = () => {
    <nav className='mobile:hidden'>
    <ul className='flex gap-[48px] text-[16px] mt-1'>
 
-<li className='flex w-[48px] h-[24px] underline'>
-  <Link href='./shop' className='hover:text-blue-500' target="_blank">Shop</Link></li>
+<li className='flex flex-col w-[48px] h-[24px] underline'>
+  <Link href='#Shop' className='flex hover:text-blue-500' target="_blank">Shop<Image src={"/images/downArrow.svg"}alt="sign"width={16} height={16}/></Link>
+  <Link href='./productdetailpage' className='hover:text-blue-500' target="_blank">productdetailpage</Link>
+
+  <Link href='./categorypage' className='hover:text-blue-500' target="_blank">CategoryPage</Link>
+
+  <Link href='./cart' className='hover:text-blue-500' target="_blank">Cart</Link></li>
+  
 
 <li className='w-[66px] h-[24px]'>
-<Link href='./onsale' className='hover:text-blue-500' target="_blank">On Sale</Link></li>
+<Link href='#On Sale' className='hover:text-blue-500' target="_blank">On Sale</Link></li>
 
 <li className='w-[100px] h-[24px]'>
 <Link href='#New Arrivals' className='hover:text-blue-500'>New Arrivals</Link></li>
@@ -77,13 +85,17 @@ const Header = () => {
             <ul className='flex flex-col gap-4 lg:hidden'>
               
               <li>
-                <Link href="./shop" onClick={toggleMenu}>Shop</Link>
+                <Link href="#Shop" onClick={toggleMenu}>Shop</Link>
+                <Link href="./productdetailpage" onClick={toggleMenu}>productdetailpage</Link>
+                <Link href="./categorypage" onClick={toggleMenu}>Categorypage</Link>
+                <Link href="./cart" onClick={toggleMenu}>Cart</Link>
+
               </li>
               <li>
                 <Link href="./onsale" onClick={toggleMenu}>On sale</Link>
               </li>
               <li>
-                <Link href="#New Arrival" onClick={toggleMenu}>New Arrivals</Link>
+                <Link href="#New Arrivals" onClick={toggleMenu}>New Arrivals</Link>
               </li>
               <li>
                 <Link href="#Brands" onClick={toggleMenu}>Brands</Link>

@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div>
         {/* section 1 */}
+        <section id="#Shop">
        <div className=" w-[1440px] h-[663px] bg-[url('/images/couple.svg')] mt-[45px] mobile:hidden">
         {/* text div */}
         <div className='flex flex-col'>
@@ -34,7 +35,10 @@ const Home = () => {
        </div>
       </div>
 
+      </section>
+
       {/* sec 2 */}
+      <section id="#Brands">
       <div className='flex w-[1440px] h-[122px] mt-[32px] bg-[#000000] mobile:flex-col mobile:w-[390px] mobile:h-screen'>
       <h1 className='mt-[50px] ml-[100px]'><Image src={"/images/Vector1.svg"}alt="couple"width={166} height={33}/></h1>
 
@@ -46,9 +50,11 @@ const Home = () => {
 
       <h1 className='mt-[50px] ml-[100px]'><Image src={"/images/vector5.svg"}alt="couple"width={206} height={33}/></h1>
       </div>
+      </section>
 
 
       {/* section 3 */}
+      <section id="New Arrivals">
       <div className='flex flex-col mt-[100px] w-[1440px]'>
 
         {/* text div */}
@@ -130,8 +136,10 @@ const Home = () => {
 
         <div className='w-[1240px] mt-[100px] border-[1px] border-[#cac8c8] ml-[100px] mobile:w-[300px] mobile:ml-10'></div>
 </div>
+</section>
         
         {/* section 4 */}
+        <section id="#On Sale">
 
         <div className='flex flex-col mt-[100px] w-[1440px]'>
 
@@ -212,9 +220,12 @@ const Home = () => {
         {/* button */}
         <Button variant={'apnaStyle'} className='ml-[611px] border-[1px] border-[#dfdede] w-[218px] h-[52px] rounded-full mt-[32px] mobile:ml-20 '> View All</Button>
 </div>
+</section>
 
 
 {/* section 5 */}
+
+
 
 <div className='w-[1239px] ml-[100px] mt-[100px] bg-[#F0F0F0] pt-1 mobile:ml-[5px] mobile:h-[1100px] mobile:w-[358px]'>
   {/* text div */}
@@ -232,6 +243,7 @@ const Home = () => {
 
  </div>
 </div>
+
 
 
 

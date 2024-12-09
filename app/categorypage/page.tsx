@@ -9,7 +9,7 @@ const page = () => {
     <div>
         <Header/>
 
-        <div className='h-screen ml-[100px] mt-[100px]'>
+        <div className='h-screen ml-[100px] mt-[100px] mobile:ml-[2px] mb-[1000px]'>
 
 {/* main work */}
         <div className='flex gap-[12px]'>
@@ -18,9 +18,9 @@ const page = () => {
         </div>
 
 {/* 2nd */}
-        <div className='flex'>
+        <div className='flex mobile:flex-col'>
             {/* left side */}
-            <div className='flex w-[295px] h-[1220px] mt-[100px] border-[1px] border-[#9e9e9e] rounded-xl'>
+            <div className='flex w-[295px] h-[1220px] mt-[100px] border-[1px] border-[#9e9e9e] rounded-xl mobile:ml-[30px]'>
 
             <div className='flex flex-col gap-[44px] ml-[24px] mt-[24px]'>
                 
@@ -54,14 +54,14 @@ const page = () => {
 
 
     {/* right side */}
-            <div className='flex flex-col w-[900px] h-[1400px] mt-[100px] ml-[32px]'>
-                <div className='flex justify-between '>
+            <div className='flex flex-col w-[900px] h-[1400px] mt-[100px] ml-[32px] mobile:h-[4000px] mobile:ml-[2px]'>
+                <div className='flex justify-between mobile:flex-col'>
                     <h1 className='text-[32px] font-extrabold'>Casual</h1>
                     <h2 className='flex'>Showing 1-10 of 100 Products.Sort By.MostPopular<Image src={"/images/downArrow.svg"}alt="sign"width={16} height={16}/></h2>
                 </div>
 
                 {/* col div */}
-                <div className='grid grid-cols-3'>
+                <div className='grid grid-cols-3 mobile:grid-cols-1 mobile:ml-[24px]'>
                    {/*1st col */}
             <div className='flex flex-col gap-[20px]'> 
             {/* img div */}
@@ -214,7 +214,7 @@ const page = () => {
 
         </div>
         {/* 2nd */}
-        <div className='flex justify-between w-[920px] h-[20px] ml-[350px]'>
+        <div className='flex justify-between w-[920px] h-[20px] ml-[350px] mobile:ml-[20px] mobile:w-[300px]'>
             <h1 className='flex'><Image src={"/images/arrow-left.svg"}alt="star"width={20} height={20}/>Previous</h1>
             <h2 className='flex'>Next<Image src={"/images/arrow-right.svg"}alt="star"width={20} height={20}/></h2>
         </div>
@@ -242,7 +242,7 @@ const page = () => {
 
 
 
-      <Footer/>
+      
         </div>
         {/* main work */}
 
@@ -297,7 +297,7 @@ const page = () => {
 
 
 
-      
+      <Footer/>
     </div>
   )
 }
