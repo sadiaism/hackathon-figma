@@ -18,7 +18,7 @@ const Header = () => {
 return (
     <div>
 {/* top header */}
-    <div className=' flex justify-between w-[1440px] h-[38px] bg-[#000000] '>
+    <div className=' flex justify-between w-[1440px] h-[38px] bg-[#000000] mobile:hidden'>
       <div className='ml-[544px] text-[#FFFFFF] mobile:ml-[8px]'>Sign up and get 20% off to your first order.<Button variant={"apnaStyle"} className='underline'>Sign Up Now</Button></div>
       <div><Image src={"/images/cross.svg"}alt="cross"width={20}height={20}/></div>
         </div>
@@ -31,10 +31,10 @@ return (
    
    
    <nav className='mobile:hidden'>
-   <ul className='flex gap-[48px] text-[16px] mt-1'>
+   <ul className='flex gap-[48px] text-[16px] mt-1 '>
 
 <li className='flex flex-col w-[48px] h-[24px] underline'>
-  <Link href='#Shop' className='flex hover:text-blue-500' target="_blank">Shop<Image src={"/images/downArrow.svg"}alt="sign"width={16} height={16}/></Link>
+  <Link href='#Shop' className='flex hover:text-blue-500 ' target="_blank">Shop<Image src={"/images/downArrow.svg"}alt="sign"width={16} height={16}/></Link>
   <Link href='./productdetailpage' className='hover:text-blue-500' target="_blank">productdetailpage</Link>
 
   <Link href='./categorypage' className='hover:text-blue-500' target="_blank">CategoryPage</Link>
@@ -85,14 +85,14 @@ return (
             <ul className='flex flex-col gap-4 lg:hidden'>
               
               <li>
-                <Link href="#Shop" onClick={toggleMenu}>Shop</Link>
-                <Link href="./productdetailpage" onClick={toggleMenu}>productdetailpage</Link>
-                <Link href="./categorypage" onClick={toggleMenu}>Categorypage</Link>
-                <Link href="./cart" onClick={toggleMenu}>Cart</Link>
+                <Link href="#Shop" className='block' onClick={toggleMenu}>Shop</Link>
+                <Link href="./productdetailpage" className='block' onClick={toggleMenu}>productdetailpage</Link>
+                <Link href="./categorypage" className='block' onClick={toggleMenu}>Categorypage</Link>
+                <Link href="./cart" className='block' onClick={toggleMenu}>Cart</Link>
 
               </li>
               <li>
-                <Link href="./onsale" onClick={toggleMenu}>On sale</Link>
+                <Link href="#On Sale" onClick={toggleMenu}>On sale</Link>
               </li>
               <li>
                 <Link href="#New Arrivals" onClick={toggleMenu}>New Arrivals</Link>

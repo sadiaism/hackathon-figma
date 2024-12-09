@@ -20,10 +20,10 @@ const page = () => {
 
             <div className='flex mt-[50px] mobile:flex-col'>
                 {/* left side */}
-                <div className='flex flex-col w-[715px] h-[508px] border-[1px] border-[#e8e7e7] rounded-lg gap-[20px] ml-[1px]'>
+                <div className='flex flex-col w-[715px] h-[508px] border-[1px] border-[#e8e7e7] rounded-lg gap-[20px] ml-[1px] mobile:w-[370px]'>
                     
                     {/* 1st col */}
-                  <div className='flex w-[667px] h-[124px] gap-[16px] border-[1px] border-[#e8e7e7] rounded-lg mt-[24px] ml-[24px]'>
+                  <div className='flex w-[667px] h-[124px] gap-[16px] border-[1px] border-[#e8e7e7] rounded-lg mt-[24px] ml-[24px] mobile:w-[350px] mobile:h-[350px] mobile:ml-[6px]'>
                     
                     {/* img */}
                     <div className='flex'><Image src={"/images/GradientT-shirt.svg"}alt="shirt"width={124} height={124}/></div>
@@ -40,7 +40,7 @@ const page = () => {
                   {/* 1st end */}
 
                   {/* 2nd col */}
-                  <div className='flex w-[667px] h-[124px] gap-[16px] border-[1px] border-[#e8e7e7] rounded-lg mt-[24px] ml-[24px]'>
+                  <div className='flex w-[667px] h-[124px] gap-[16px] border-[1px] border-[#e8e7e7] rounded-lg mt-[24px] ml-[24px] mobile:w-[350px] mobile:h-[350px] mobile:ml-[6px]'>
                     
                     {/* img */}
                     <div className='flex'><Image src={"/images/checkshirt.svg"}alt="shirt"width={124} height={124}/></div>
@@ -57,7 +57,7 @@ const page = () => {
                   {/* 2nd end */}
 
                   {/* 3rd col */}
-                  <div className='flex w-[667px] h-[124px] gap-[16px] border-[1px] border-[#e8e7e7] rounded-lg mt-[24px] ml-[24px]'>
+                  <div className='flex w-[667px] h-[124px] gap-[16px] border-[1px] border-[#e8e7e7] rounded-lg mt-[24px] ml-[24px] mobile:w-[350px] mobile:h-[350px] mobile:ml-[6px]'>
                     
                     {/* img */}
                     <div className='flex'><Image src={"/images/fitjeans.svg"}alt="shirt"width={124} height={124}/></div>
