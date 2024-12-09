@@ -60,7 +60,7 @@ const page = () => {
                   <div className='flex w-[667px] h-[124px] gap-[16px] border-[1px] border-[#e8e7e7] rounded-lg mt-[24px] ml-[24px] mobile:w-[350px] mobile:h-[350px] mobile:ml-[6px]'>
                     
                     {/* img */}
-                    <div className='flex'><Image src={"/images/fitjeans.svg"}alt="shirt"width={124} height={124}/></div>
+                    <div className='flex'><Image src={"/images/Fitjeans.svg"}alt="shirt"width={124} height={124}/></div>
                     {/* text */}
                     <div className='flex flex-col w-[527px] h-[124px]'>
                         <h1 className='flex justify-between text-[20px] font-bold'>Skinny Fit Jeans<Image src={"/images/orange frame.svg"}alt="shirt"width={24} height={24}/></h1>

@@ -9,7 +9,7 @@ const page = () => {
     <div>
         <Header/>
 
-        <div className='h-screen ml-[100px] mt-[100px] mobile:ml-[2px] mb-[1000px]'>
+        <div className='h-screen ml-[100px] mt-[100px] mobile:ml-[2px] mb-[1000px] mobile:mb-[5100px]'>
 
 {/* main work */}
         <div className='flex gap-[12px]'>
