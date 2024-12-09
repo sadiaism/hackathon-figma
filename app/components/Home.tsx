@@ -48,7 +48,7 @@ const Home = () => {
 
       <h1 className='mt-[50px] ml-[100px]'><Image src={"/images/vector4.svg"}alt="couple"width={194} height={32}/></h1>
 
-      <h1 className='mt-[50px] ml-[100px]'><Image src={"/images/vector5.svg"}alt="couple"width={206} height={33}/></h1>
+      <h1 className='mt-[50px] ml-[100px]'><Image src={"/images/Vector5.svg"}alt="couple"width={206} height={33}/></h1>
       </div>
       </section>
 
