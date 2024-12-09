@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { useState } from "react";
 import { AiOutlineMenu ,AiOutlineClose} from "react-icons/ai";
-import { BiDownArrow } from 'react-icons/bi'
+
 
 
 const Header = () => {
