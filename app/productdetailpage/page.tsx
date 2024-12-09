@@ -202,7 +202,7 @@ const page = () => {
             <div className='flex flex-col gap-[20px]'> 
             {/* img div */}
             <div className='mt-[32px]'>
-            <Image src={"/images/TippingShirt.svg"}alt="shirt"width={295} height={298}/>
+            <Image src={"/images/Tippingshirt.svg"}alt="shirt"width={295} height={298}/>
             </div>
             {/* text div */}
             <div className='gap-[20px]'> 
