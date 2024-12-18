@@ -1,19 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Link from 'next/link'
+
 
 const page = () => {
   return (
     <div>
 
-        <Header/>
+      
 
         {/* main work */}
         <div className='flex flex-col ml-[100px] mt-[100px] mb-[100px] mobile:ml-[2px]'>
 
-            <div className='flex w-[106px] h-[22px]'><h1 className='flex gap-[12px]'>Home<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h1><h2>Cart</h2></div>
+            <div className='flex w-[106px] h-[22px]'><Link href="./home" className="hover:text-blue-500"><h1 className='flex gap-[12px]'>Home<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h1></Link><Link href="./cart" className='hover:text-blue-500'><h2>Cart</h2></Link></div>
 
 
             <div className='mt-[100px] font-extrabold text-[40px]'>Your Cart</div>
@@ -143,7 +143,7 @@ const page = () => {
         </div>
 {/* work end */}
 
-<Footer/>
+
       
     </div>
   )

@@ -33,17 +33,11 @@ return (
    <nav className='mobile:hidden'>
    <ul className='flex gap-[48px] text-[16px] mt-1 '>
 
-<li className='flex flex-col w-[48px] h-[24px] underline'>
-  <Link href='#Shop' className='flex hover:text-blue-500 ' target="_blank">Shop<Image src={"/images/downArrow.svg"}alt="sign"width={16} height={16}/></Link>
-  <Link href='./productdetailpage' className='hover:text-blue-500' target="_blank">productdetailpage</Link>
-
-  <Link href='./categorypage' className='hover:text-blue-500' target="_blank">CategoryPage</Link>
-
-  <Link href='./cart' className='hover:text-blue-500' target="_blank">Cart</Link></li>
+<li className='w-[48px] h-[24px] underline'>
+  <Link href='#Shop' className='flex hover:text-blue-500 '>Shop<Image src={"/images/downArrow.svg"}alt="sign"width={16} height={16}/></Link></li>
   
-
 <li className='w-[66px] h-[24px]'>
-<Link href='#On Sale' className='hover:text-blue-500' target="_blank">On Sale</Link></li>
+<Link href='#On Sale' className='hover:text-blue-500'>On Sale</Link></li>
 
 <li className='w-[100px] h-[24px]'>
 <Link href='#New Arrivals' className='hover:text-blue-500'>New Arrivals</Link></li>
@@ -55,12 +49,12 @@ return (
    </div>
 
 <div className='w-[577px] h-[48px]  bg-[#F0F0F0] rounded-full'>
-    <div className='flex pl-[16px] pt-[12px] pb-[12px] gap-[12px]'><Image src={"/images/search bar.svg"}alt="cross"width={24}height={24}/>Search for products</div>
+    <div className='flex pl-[16px] pt-[12px] pb-[12px] gap-[12px]'><Image src={"/images/search bar.svg"}alt="cross"width={24}height={24}/><input type="text" placeholder="Search for products"></input></div>
 </div>
 
 
 <div className='flex w-[62px] h-[24px] gap-[14px] mt-2'>
-<Image src={"/images/shopping.svg"}alt="shop"width={24}height={24}/>
+<Link href="./cart"><Image src={"/images/shopping.svg"}alt="shop"width={24}height={24}/></Link>
 <Image src={"/images/email icon.svg"}alt="icon"width={24}height={24}/>
 
 </div>

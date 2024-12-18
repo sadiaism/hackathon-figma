@@ -1,19 +1,19 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import Header from '@/app/components/Header'
-import Footer from '@/app/components/Footer'
+import Link from 'next/link'
+
 
 
 const page = () => {
   return (
     <div>
-        <Header/>
+    
         {/* main work */}
-        <div className=' h-screen ml-[100px] mobile:ml-[1px]'>
+        <div className='ml-[100px] mobile:ml-[1px]'>
 
             <div className='flex w-[259px] h-[22px] mt-[100px]'>
-                <h1 className='flex'>Home<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h1>
+                <Link href="./home" className="hover:text-blue-500"><h1 className='flex'>Home<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h1></Link>
                 <h2 className='flex'>Shop<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h2>
                 <h2 className='flex'>Men<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h2>
                 <h2 className='flex'>T-shirt<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h2>
@@ -79,7 +79,7 @@ const page = () => {
             <div className='grid grid-cols-2 mt-[50px] gap-[12px] mobile:grid-cols-1'>
 
              {/* 1st col */}
-                <div className='w-[610px] h-[242px] border-[#cdcbcb] border-[1px] rounded-2xl mobile:w-[358px] mobile:h-[225px]'>
+                <div className='border-[#cdcbcb] border-[1px] rounded-2xl'>
                     <div className='flex flex-col mt-[32px] ml-[32px] gap-[12px] mobile:mt-[12px] mobile:gap-[7px]'>
                     <h1 className='flex justify-between'><Image src={"/images/star 1.svg"}alt="sign"width={139} height={24}/><Image src={"/images/three dots.svg"}alt="dots"width={24} height={24}/></h1>
                     <h2 className='flex gap-[12px]'>Samantha D <Image src={"/images/green tick.svg"}alt="sign"width={24} height={24}/></h2>
@@ -91,7 +91,7 @@ const page = () => {
                 {/* 1st col end */}
 
                  {/* 2nd col */}
-                 <div className='w-[610px] h-[242px] border-[#d6d4d4] border-[1px] rounded-2xl mobile:w-[358px] mobile:h-[225px]'>
+                 <div className='border-[#d6d4d4] border-[1px] rounded-2xl'>
                     <div className='flex flex-col mt-[32px] ml-[32px] gap-[12px] mobile:mt-[12px] mobile:gap-[7px]'>
                     <h1 className='flex justify-between'><Image src={"/images/star 1.svg"}alt="sign"width={139} height={24}/><Image src={"/images/three dots.svg"}alt="dots"width={24} height={24}/></h1>
                     <h2 className='flex gap-[12px]'>Alex M. <Image src={"/images/green tick.svg"}alt="sign"width={24} height={24}/></h2>
@@ -103,7 +103,7 @@ const page = () => {
                 {/* 2nd col end */}
 
                  {/* 3rd col */}
-                 <div className='w-[610px] h-[242px] border-[#d1d0d0] border-[1px] rounded-2xl mobile:w-[358px] mobile:h-[225px]'>
+                 <div className='border-[#d1d0d0] border-[1px] rounded-2xl'>
                     <div className='flex flex-col mt-[32px] ml-[32px] gap-[12px] mobile:mt-[12px] mobile:gap-[7px]'>
                     <h1 className='flex justify-between'><Image src={"/images/star 1.svg"}alt="sign"width={139} height={24}/><Image src={"/images/three dots.svg"}alt="dots"width={24} height={24}/></h1>
                     <h2 className='flex gap-[12px]'>Ethan R.<Image src={"/images/green tick.svg"}alt="sign"width={24} height={24}/></h2>
@@ -115,7 +115,7 @@ const page = () => {
                 {/* 3rd col end */}
 
                  {/* 4th col */}
-                 <div className='w-[610px] h-[242px] border-[#c8c8c8] border-[1px] rounded-2xl mobile:w-[358px] mobile:h-[225px]'>
+                 <div className='border-[#c8c8c8] border-[1px] rounded-2xl'>
                     <div className='flex flex-col mt-[32px] ml-[32px] gap-[12px] mobile:mt-[12px] mobile:gap-[7px]'>
                     <h1 className='flex justify-between'><Image src={"/images/star 1.svg"}alt="sign"width={139} height={24}/><Image src={"/images/three dots.svg"}alt="dots"width={24} height={24}/></h1>
                     <h2 className='flex gap-[12px]'>Olivia P. <Image src={"/images/green tick.svg"}alt="sign"width={24} height={24}/></h2>
@@ -127,7 +127,7 @@ const page = () => {
                 {/* 4th col end */}
 
                  {/* 5th col */}
-                 <div className='w-[610px] h-[242px] border-[#d3d2d2] border-[1px] rounded-2xl mobile:w-[358px] mobile:h-[225px]'>
+                 <div className='border-[#d3d2d2] border-[1px] rounded-2xl'>
                     <div className='flex flex-col mt-[32px] ml-[32px] gap-[12px] mobile:mt-[12px] mobile:gap-[7px]'>
                     <h1 className='flex justify-between'><Image src={"/images/star 1.svg"}alt="sign"width={139} height={24}/><Image src={"/images/three dots.svg"}alt="dots"width={24} height={24}/></h1>
                     <h2 className='flex gap-[12px]'>Liam K. <Image src={"/images/green tick.svg"}alt="sign"width={24} height={24}/></h2>
@@ -139,7 +139,7 @@ const page = () => {
                 {/* 5th col end */}
 
                  {/* 6th col */}
-                 <div className='w-[610px] h-[242px] border-[#c4c2c2] border-[1px] rounded-2xl mobile:w-[358px] mobile:h-[225px]'>
+                 <div className='border-[#c4c2c2] border-[1px] rounded-2xl'>
                     <div className='flex flex-col mt-[32px] ml-[32px] gap-[12px] mobile:mt-[12px] mobile:gap-[7px]'>
                     <h1 className='flex justify-between'><Image src={"/images/star 1.svg"}alt="sign"width={139} height={24}/><Image src={"/images/three dots.svg"}alt="dots"width={24} height={24}/></h1>
                     <h2 className='flex gap-[12px]'>Ava H. <Image src={"/images/green tick.svg"}alt="sign"width={24} height={24}/></h2>
@@ -243,7 +243,7 @@ const page = () => {
 
         
         
-        <Footer/>
+
         
         </div>
         {/* main work end */}

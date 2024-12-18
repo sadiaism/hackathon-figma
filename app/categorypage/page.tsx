@@ -1,20 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Link from 'next/link'
+
 
 const page = () => {
   return (
     <div>
-        <Header/>
 
         <div className='h-screen ml-[100px] mt-[100px] mobile:ml-[2px] mb-[1000px] mobile:mb-[5100px]'>
 
 {/* main work */}
         <div className='flex gap-[12px]'>
-        <h1 className='flex'>Home<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h1>
-        <h2>Casual</h2>
+        <Link href="./home" className='hover:text-blue-500'><h1 className='flex'>Home<Image src={"/images/rightArrow.svg"}alt="sign"width={16} height={16}/></h1></Link>
+        <Link href="./categorypage" className='hover:text-blue-500'><h2>Casual</h2></Link>
         </div>
 
 {/* 2nd */}
@@ -219,26 +218,6 @@ const page = () => {
             <h2 className='flex'>Next<Image src={"/images/arrow-right.svg"}alt="star"width={20} height={20}/></h2>
         </div>
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -251,53 +230,6 @@ const page = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <Footer/>
     </div>
   )
 }

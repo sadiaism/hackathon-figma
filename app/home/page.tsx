@@ -1,13 +1,13 @@
-
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const Home = () => {
   return (
     <div>
         {/* section 1 */}
-        <section id="#Shop">
+        <section id="Shop">
        <div className=" w-[1440px] h-[663px] bg-[url('/images/couple.svg')] mt-[45px] mobile:hidden">
         {/* text div */}
         <div className='flex flex-col'>
@@ -38,7 +38,7 @@ const Home = () => {
       </section>
 
       {/* sec 2 */}
-      <section id="#Brands">
+      <section id="Brands">
       <div className='flex w-[1440px] h-[122px] mt-[32px] bg-[#000000] mobile:flex-col mobile:w-[390px] mobile:h-screen'>
       <h1 className='mt-[50px] ml-[100px]'><Image src={"/images/Vector1.svg"}alt="couple"width={166} height={33}/></h1>
 
@@ -67,7 +67,8 @@ const Home = () => {
             <div className='flex flex-col gap-[20px]'> 
             {/* img div */}
             <div className='mt-[32px]'>
-            <Image src={"/images/shirt.svg"}alt="couple"width={295} height={298}/>
+                <Link href="./productdetailpage">
+            <Image src={"/images/shirt.svg"}alt="couple"width={295} height={298}/></Link>
             </div>
             {/* text div */}
             <div className='gap-[20px]'> 
@@ -139,7 +140,7 @@ const Home = () => {
 </section>
         
         {/* section 4 */}
-        <section id="#On Sale">
+        <section id="On Sale">
 
         <div className='flex flex-col mt-[100px] w-[1440px]'>
 
@@ -225,15 +226,13 @@ const Home = () => {
 
 {/* section 5 */}
 
-
-
 <div className='w-[1239px] ml-[100px] mt-[100px] bg-[#F0F0F0] pt-1 mobile:ml-[5px] mobile:h-[1100px] mobile:w-[358px]'>
   {/* text div */}
   <div className='flex justify-center items-center  mt-[70px] font-extrabold text-[48px]'>BROWSE BY DRESS STYLE</div>
   {/* image div */}
 
   <div className='flex gap-[16px] mt-[44px] mobile:flex-col mobile:mt-0'> 
-    <div className='ml-[64px] rounded-xl mobile:ml-6 mobile:w-[310px] mobile:h-[190px]'><Image src={"/images/casual.svg"}alt="casual"width={407} height={64}/></div>
+    <div className='ml-[64px] rounded-xl mobile:ml-6 mobile:w-[310px] mobile:h-[190px]'><Link href="./categorypage"><Image src={"/images/casual.svg"}alt="casual"width={407} height={64}/></Link></div>
   <div className='w-[684px] h-[289px] mobile:w-[310px] mobile:h-[190px] mobile:ml-6'><Image src={"/images/formal.svg"}alt="star"width={684} height={64}/></div></div>
 
 
@@ -243,6 +242,7 @@ const Home = () => {
 
  </div>
 </div>
+
 
 
 
@@ -290,100 +290,7 @@ const Home = () => {
 
        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-      
-      
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     
     
     
